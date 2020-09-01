@@ -99,4 +99,43 @@ print(f'{"hi":<10}') # 왼쪽 정렬
 print(f'{"hi":>10}') # 오른쪽 정렬
 print(f'{"hi":^10}') # 가운데 정렬
 
-print(f'{"hi":=^10}') #가운데 정렬하고 '=' 문자로 공백 채우기
+print(f'{"hi":=^10}') # 가운데 정렬하고 '=' 문자로 공백 채우기
+print(f'{"hi":!<10}') # 왼쪽 정렬하고 '!' 문자로 공백 채우기
+
+y = 3.42134234
+print(f'{y:0.4f}') # 소수점 4자리까지만 표현
+print(f'{y:10.4f}') # 소수점 4자리까지 표현하고 총 자리수를 10으로 맞춤
+
+print(f'{{and}}') # 문자 { } 표시
+
+# 문자열 관련 함수들
+a = "hobby"
+print(a.count('b')) # 문자 개수 세기
+
+a = "Python is the best choice"
+print(a.find('b')) # 위치 알려주기 
+print(a.find('k')) # 존재하지 않는 문자는 -1을 반환
+
+a = "Life is too short"
+print(a.index('t')) # 위치 알려주기 2, 존재하지 않는 문자면 오류
+
+print(",".join('abcd')) # 문자열 삽입
+print(",".join(['a', 'b', 'c', 'd']))
+
+a = "hi"
+print(a.upper()) # 소문자를 대문자로 바꾸기
+a = "HI"
+print(a.lower()) # 대문자를 소문자로 바꾸기
+
+a = " hi "
+print(a.lstrip()) # 왼쪽 공백 지우기
+print(a.rstrip()) # 오른쪽 공백 지우기
+print(a.strip()) # 양쪽 공백 지우기
+
+a = "Life is too short"
+print(a.replace("Life", "Your leg")) # 문자열 바꾸기
+
+print(a.split()) # 문자열 나누기
+
+b = "a:b:c:d"
+print(b.split(':')) # 문자열 나누기
