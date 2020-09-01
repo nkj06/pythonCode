@@ -87,3 +87,16 @@ print("{0:10.4f}".format(x))
 print("{{ and }}".format())
 
 # f 문자열 포매팅
+name = '남경진'
+age = 25
+print(f'나의 이름은 {name}입니다. 나이는 {age}입니다.')
+print(f'나는 내년이면 {age+1}살이 된다.')
+
+d = {'name':'남경진', 'age':25}
+print(f'나의 이름은 {d["name"]}입니다. 나이는 {d["age"]}입니다.')
+
+print(f'{"hi":<10}') # 왼쪽 정렬
+print(f'{"hi":>10}') # 오른쪽 정렬
+print(f'{"hi":^10}') # 가운데 정렬
+
+print(f'{"hi":=^10}') #가운데 정렬하고 '=' 문자로 공백 채우기
